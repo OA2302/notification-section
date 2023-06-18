@@ -1,48 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Notifications page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
 
-<div class="note"><h4>Notification <button>3</button>
-  </h4><h5>Mark as read</h5></div>
+  <div class="container">
+    <header>
 
-  <div class="all">
-  <div class="a"> <img src="assets/images/avatar-angela-gray.webp" alt=""><strong> Mark Webber</strong> <a>reacted to your recent post </a><b>My first tournament today!</b><br>
-    </div><small>1m ago</small>
+      <div>
+        <h4>Notification
+        </h4>
+        <button class="btn">3</button>
+      </div>
+      
+      <button class="h5">Mark as read</button>
+    </header>
+  
+  
+  
+  
+  
+    <div class="notificationss">
+  
+  
+  
+      <div id="notification"> 
+        <div class="image">
+          <img src="assets/images/avatar-angela-gray.webp" alt="">
+        </div>
+        
 
-<div class="b"> <img src="assets/images/avatar-anna-kim.webp" alt=""><b> Angela Gray </b><a>followed you</a><br>
-  </div><small> 5m ago</small>
+        <div class="description">
+          <p>
+            <a class="name">Mark Webber</a><a> reacted to your recent post </a><b>My first tournament today!</b>    
+          </p>
+            
+            <small>1m ago</small>
+        </div>
+        
+      </div>
+  
+  
+  
+  
+  
+  
+      <div id="notification"> 
+        <div class="image">
+          <img src="assets/images/avatar-anna-kim.webp" alt="">
+        </div>
 
-  <div class="c"><img src="assets/images/avatar-jacob-thompson.webp" alt=""><strong>  Jacob Thompson </strong><a>has joined your group</a> <b>Chess Club</b><br>
-  </div><small>1 day ago</small>
+        <div class="description">
+          <p>
+            <b> Angela Gray </b><a> followed you</a>
+          </p>
+          
+          
+          <small>5m ago</small>
+        </div>
+       
+      </div>
+  
+  
+  
+  
+  
+      <div id="notification">
+        <div class="image">
+          <img src="assets/images/avatar-jacob-thompson.webp" alt="">
+        </div>
 
- <div class="d"> <img src="assets/images/avatar-rizky-hasanuddin.webp" alt=""><strong>Rizky Hasanuddin</strong><a> sent you a private message</a><br>
-  <small>  5 days ago</small>
- <p class="pm"> Hello, thanks for setting up the Chess Club. I've been a member for a <br>few weeks now and I'm already having lots of fun and improving my <br>game.</p>
-</div>
- <div class="e"><img src="assets/images/avatar-mark-webber.webp" alt=""><strong>Nathan Peterson</strong> <a>reacted to your recent post </a><b>5 end-game strategies to increase your win rate</b><br>
-  </div><small>2 weeks ago</small>
+        
+        <div class="description">
+          <p>
+            <a class="name"> Jacob Thompson </a><a>has joined your group </a><b>Chess Club</b>
+          </p>
+         
+          <small >1 day ago</small>
+        </div>
+        
+      </div>
+  
+  
+  
+  
+  
+  
+      <div class="notifications"> 
+        <div class ="image">
+          <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="">
+        </div>
+        
+        <div class="descriptions">
+          <p><a class="name">Rizky Hasanuddin</a><a> sent you a private message</a></p>
+          <small>5 days ago</small> 
 
-<div class="f"><img src="assets/images/avatar-kimberly-smith.webp" alt=""><strong>Anna Kim </strong><a>left the group</a> <b>Chess Club</b><br>
-    </div><small>  2 weeks ago</small>
+          <div class ="message">
+            <p class="pm"> Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.</p>
+          </div>
+        </div>
+      
+
+      
+        
+      </div>
+  
+  
+  
+  
+      <div class="notifications">
+        <div class="image">
+          <img src="assets/images/avatar-mark-webber.webp" alt="">
+        </div>
+        
+
+        <div class = "descriptions">
+          <p>
+            <a class="name">Nathan Peterson</a> <a>reacted to your recent post</a>
+            <span class = "bold-text">5 end-game strategies to increase your win rate</span>
+            
+          </p>
+    
+          <small>2 weeks ago</small>
+        </div>
+       
+        
+      </div>
+  
+  
+  
+  
+  
+  
+      <div class="notifications">
+
+        <!-- Created two divs so that all the elements won't be the ones experiencing flexbox -->
+        <div class="image">
+          <img src="assets/images/avatar-kimberly-smith.webp" alt="">
+        </div>
+
+        <div class="descriptions">
+          <p>
+            <a class="name">Anna Kim </a><a>left the group</a> <b>Chess Club</b>
+          </p>
+    
+          <small> 2 weeks ago</small>
+        </div>
+        <footer><small>OA2302 • © 2023</small></footer>
+    
+    
+      </div>
+    </div>
   </div>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="script.js"></script>
+
 </body>
+
 </html>

@@ -6,22 +6,21 @@
 }
 
 body {
-    position: absolute;
-	top: 55%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	padding: 30px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.container {
+    padding: 30px;
 	border-radius: 30px;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     font-family: sans-serif;
     background: rgb(255, 255, 255);
-    height: 700px;
-}
-
-.note {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 50%;
 }
 
 h4 {
@@ -29,11 +28,19 @@ h4 {
     font-family: sans-serif;
     margin-bottom: 10px;
 }
-strong {
-    clear: left;
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom: 20px;
 }
 
-button {
+header div{
+    display: flex;
+    gap: 10px;
+}
+
+/* button */ .btn{
     background: rgb(27, 16, 102);
     color: white;
     width: 30px;
@@ -42,17 +49,34 @@ button {
     border-radius: 3px;
 }
 
-h5 {
+.h5 {
     color: rgb(34, 34, 233);
-    text-align: right;
-    padding-top: 20px;
+    text-decoration: none;
+    background: white;
+
+}
+
+.h5:hover {
+    background: rgb(239, 235, 235);
+    border-radius: 3px;
+    width: 90px;
+    height: 15px;
+}
+.name {
+    font-weight: 700;
+    font-style: normal;
+    font-family: sans-serif;
+    color: black;
+}
+
+b {
+    color: rgb(46, 22, 206);
 }
 
 img {
     width: 40px;
-    margin-top: 10px;
+    height: 40px;
     border-radius: 50%;
-    float: left;
 }
 
 a {
@@ -61,98 +85,52 @@ a {
     text-decoration: none;
 }
 
-.mk {
-    padding-left: 400px;
-    color: rgb(91, 91, 198);
-}
 
-b {
-    color: rgb(93, 0, 255);
-}
-
-.a {
-    background: rgb(234, 234, 241);
-    height: 70px;
-    border-radius: 9px;
-    width: 700px;
+.notificationss {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: 1;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.b {
-    background: rgb(234, 234, 241);
-    height: 70px;
-    border-radius: 9px;
-    width: 700px;
-    max-width: 750px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    row-gap: 1px;
-    margin-right: 10px;
-}
-
-.c {
-    background: rgb(234, 234, 241);
-    height: 70px;
-    border-radius: 9px;
-    width: 700px;
-    max-width: 750px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 5px;
-}
-
-.d {
-    height: 70px;
-    border-radius: 9px;
-    width: 700px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 5px;
-}
-
-.e {
-    background: rgb(255, 255, 255);
-    height: 85px;
+#notification {
+    background: rgb(210, 210, 221);
     border-radius: 9px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 700px;
-    max-width: 750px;
-    gap: 5px;
+    gap: 15px;
+    padding: 7px 10px;
 }
 
-.f {
-    background: rgb(255, 255, 255);
-    height: 70px;
-    border-radius: 9px;
+#notification .description{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 700px;
-    max-width: 750px;
-    gap: 5px;
+    flex-direction: column;
+    gap: 3px;
 }
-
-.pm {
-    background: rgb(181, 181, 205);
-    height: 65px;
+.message{
+    background: rgb(197, 197, 209);
     border-radius: 7px;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    margin-top: 20px ;
-    padding-top: 5px;
-    padding-left: 4px;
+    padding: 10px;
 }
-small {
-    padding-left: 45px;
-    margin-bottom: 10px;
+ .message:hover {
+    width: 450px;
+    height: 80px;
+    padding-top: 15px;
+    transition: 3s;
+    background: slategray;
+    color: white;
+ }
+ .notifications {
+    background: rgb(255, 255, 255);
+    border-radius: 9px;
+    display: flex;
+    gap: 15px;
+    padding: 7px 10px;
+}
+
+.notifications .descriptions {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+footer {
+    margin-top: 60px;
 }
